@@ -1,4 +1,4 @@
-package tpjava.domain;
+package tpjava.dao.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;

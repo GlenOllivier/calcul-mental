@@ -1,7 +1,7 @@
 package tpjava;
 
-import tpjava.domain.Score;
-import tpjava.domain.User;
+import tpjava.dao.domain.Score;
+import tpjava.dao.domain.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
