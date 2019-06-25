@@ -2,6 +2,8 @@ package tpjava;
 
 import tpjava.dao.domain.Score;
 import tpjava.dao.domain.User;
+import tpjava.model.Operation.Calculation;
+import tpjava.model.Operation.CalculationGenerator;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,7 +17,7 @@ import java.util.ArrayList;
 public class App 
 {
     public static void main( String[] args ) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-unit-1");
+/*        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-unit-1");
 
         EntityManager em = emf.createEntityManager();
 
@@ -34,6 +36,10 @@ public class App
 
         System.out.println( "Hello World!" );
         em.close();
-        emf.close();
+        emf.close();*/
+
+        Calculation c = CalculationGenerator.generateComplexCalculation(15);
+        System.out.println(c.show());
+        System.out.println(c.getValue());
     }
 }

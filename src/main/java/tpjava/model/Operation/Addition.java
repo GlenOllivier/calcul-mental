@@ -8,7 +8,17 @@ public class Addition implements Operator {
     }
 
     @Override
+    public String show() {
+        return "+";
+    }
+
+    @Override
     public boolean hasPriority() {
+        return false;
+    }
+
+    @Override
+    public boolean needsPriority() {
         return false;
     }
 }

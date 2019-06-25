@@ -8,7 +8,17 @@ public class Subtraction implements Operator {
     }
 
     @Override
+    public String show() {
+        return "-";
+    }
+
+    @Override
     public boolean hasPriority() {
         return false;
+    }
+
+    @Override
+    public boolean needsPriority() {
+        return true;
     }
 }
